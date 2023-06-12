@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(238, 255, 0);
+}
+
+table{
+     padding: 8px;
+    border-style:  solid;
+    align-content: center;
+    background-color: aliceblue;
+    height: max-content;
+    border-radius: 10px;
+    border-color: darkgray;
+}
+input[type="button"] {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 10px;
+    padding-right: 0.5em;
+    
+}
+#result{
+     padding: 40px;
+    border-radius: 4px;
+    
+}
+ 
+input[value="="]{
+    background-color: green;
+    color: antiquewhite;
+}
+input[type="text"] {
+    width:87%;
+    padding:15px;
+    border-radius: 4px;
+    }
+input[value="C"]
+{
+    background-color: red;
+    color: antiquewhite;
+}
+
+
+
+ 

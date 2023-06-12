@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+     <script language="javascript">
+        function read(n)
+        {
+            f1.res.value +=n;
+        }
+        function sum()
+        {
+            var res=eval(f1.res.value);
+            f1.res.value=res;
+        }
+     </script>
+</head>
+<body>
+    <form name="f1">
+    <h1 align="center">Calculator App</h1>
+     <table id="cal" align="center">
+         
+        <tr>
+            <td colspan="4"><input type="text" name="res" size="30%" ></td>
+            
+        </tr>
+        <tr>
+            <td><input type="button" value="C" onclick="f1.res.value = ' '"></td>
+            <td><input type="button" value="(" onclick="f1.res.value += '('"></td>
+            <td><input type="button" value=")" onclick="f1.res.value += ')'"></td>
+            <td><input type="button" value="/" onclick="f1.res.value += '/'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick= "f1.res.value += '7'"></td>
+            <td><input type="button" value="8" onclick="f1.res.value += '8'"></td>
+            <td><input type="button" value="9" onclick="f1.res.value += '9'"></td>
+            <td><input type="button" value="+" onclick="f1.res.value += '+'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="f1.res.value += '4'"></td>
+            <td><input type="button" value="5" onclick="f1.res.value += '5'"></td>
+            <td><input type="button" value="6" onclick="f1.res.value += '6'"></td>
+            <td><input type="button" value="-" onclick="f1.res.value += '-'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="f1.res.value += '1'"></td>
+            <td><input type="button" value="2" onclick="f1.res.value += '2'"></td>
+            <td><input type="button" value="3" onclick="f1.res.value += '3'"></td>
+            <td><input type="button" value="*" onclick="f1.res.value += '*'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="f1.res.value += '0'"></td>
+            <td><input type="button" value="." onclick="f1.res.value += '.'"></td>
+            <td colspan="2"><input type="button"  value="=" onclick= "sum()"></td>
+            
+        </tr>
+       
+     </table>
+     </form>
+</body>
+</html>
